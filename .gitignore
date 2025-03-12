@@ -1,0 +1,9 @@
+# Obsidian
+*/.obsidian/
+
+# Node artifact files
+node_modules/
+
+# VitePress files
+.vitepress/cache/
+.vitepress/dist/
