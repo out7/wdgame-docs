@@ -1,3 +1,7 @@
+import {
+	GitChangelog,
+	GitChangelogMarkdownSection,
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
 
@@ -25,6 +29,15 @@ export default defineConfig({
 
 		socialLinks: [
 			{ icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+		],
+	},
+	vite: {
+		plugins: [
+			GitChangelog({
+				// Fill in your repository URL here
+				repoURL: () => 'https://github.com/out7/wdgame-docs',
+			}),
+			GitChangelogMarkdownSection(),
 		],
 	},
 })

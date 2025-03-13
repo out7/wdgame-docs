@@ -1,15 +1,14 @@
 {
-  "dependencies": {
-    "vite-plugin-vitepress-auto-sidebar": "^1.7.1",
-    "vitepress-sidebar": "^1.31.0"
-  },
-  "devDependencies": {
-    "@nolebase/vitepress-plugin-sidebar": "^2.15.1",
-    "vitepress": "^1.6.3"
-  },
-  "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
-  }
+	"dependencies": {
+	},
+	"devDependencies": {
+		"@nolebase/vitepress-plugin-git-changelog": "^2.15.1",
+		"vitepress": "^1.6.3",
+		"vitepress-sidebar": "^1.31.0"
+	},
+	"scripts": {
+		"docs:dev": "vitepress dev",
+		"docs:build": "vitepress build",
+		"docs:preview": "vitepress preview"
+	}
 }
