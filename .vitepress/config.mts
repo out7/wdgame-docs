@@ -41,23 +41,5 @@ export default defineConfig({
 			GitChangelogMarkdownSection(),
 		],
 	},
-	// transformHead({ assets }) {
-	// 	const myFontFile = assets.find(file => /Bender-Regular.otf/)
-	// 	console.log(myFontFile)
-
-	// 	if (myFontFile) {
-	// 		return [
-	// 			[
-	// 				'link',
-	// 				{
-	// 					rel: 'preload',
-	// 					href: myFontFile,
-	// 					as: 'font',
-	// 					type: 'font/opentype',
-	// 					crossorigin: '',
-	// 				},
-	// 			],
-	// 		]
-	// 	}
-	// },
+	ignoreDeadLinks: [/^https?:\/\/localhost/],
 })
