@@ -1,5 +1,5 @@
 # Obsidian
-*/.obsidian/
+.obsidian/
 
 # Node artifact files
 node_modules/
@@ -7,3 +7,6 @@ node_modules/
 # VitePress files
 .vitepress/cache/
 .vitepress/dist/
+
+# budget.md
+budget.md

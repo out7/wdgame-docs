@@ -7,8 +7,8 @@ import { generateSidebar } from 'vitepress-sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-	title: 'WD Game',
-	description: 'World Domination',
+	title: 'World Domination',
+	// description: 'World Domination',
 	lang: 'ru-RU',
 	srcDir: './docs',
 	themeConfig: {
@@ -22,6 +22,7 @@ export default defineConfig({
 			documentRootPath: '/docs',
 			useTitleFromFileHeading: true,
 			manualSortFileNameByPriority: ['main', 'game', 'frontend', 'backend'],
+			sortMenusByFrontmatterOrder: true,
 			useFolderTitleFromIndexFile: true,
 			// includeRootIndexFile: true,
 			// useTitleFromFrontmatter: true,
@@ -40,4 +41,23 @@ export default defineConfig({
 			GitChangelogMarkdownSection(),
 		],
 	},
+	// transformHead({ assets }) {
+	// 	const myFontFile = assets.find(file => /Bender-Regular.otf/)
+	// 	console.log(myFontFile)
+
+	// 	if (myFontFile) {
+	// 		return [
+	// 			[
+	// 				'link',
+	// 				{
+	// 					rel: 'preload',
+	// 					href: myFontFile,
+	// 					as: 'font',
+	// 					type: 'font/opentype',
+	// 					crossorigin: '',
+	// 				},
+	// 			],
+	// 		]
+	// 	}
+	// },
 })

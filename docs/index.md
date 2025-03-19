@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: 'WD Game'
+  name: 'WD'
   text: 'World Domination'
   tagline: Telegram mini app game
   actions:

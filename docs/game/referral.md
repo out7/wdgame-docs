@@ -8,3 +8,4 @@ https://docs.telegram-mini-apps.com/platform/start-parameter - Описание 
 
 В результате будет получаться примерно такая ссылка:
 https://t.me/bestgameevermybot?startapp=944276139
+
