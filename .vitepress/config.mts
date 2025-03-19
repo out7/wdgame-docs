@@ -8,7 +8,7 @@ import { generateSidebar } from 'vitepress-sidebar'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 	title: 'World Domination',
-	// description: 'World Domination',
+	description: 'World Domination a TMA game',
 	lang: 'ru-RU',
 	srcDir: './docs',
 	themeConfig: {
@@ -29,13 +29,12 @@ export default defineConfig({
 		}),
 
 		socialLinks: [
-			{ icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+			{ icon: 'github', link: 'https://github.com/out7/wdgame-docs' },
 		],
 	},
 	vite: {
 		plugins: [
 			GitChangelog({
-				// Fill in your repository URL here
 				repoURL: () => 'https://github.com/out7/wdgame-docs',
 			}),
 			GitChangelogMarkdownSection(),
