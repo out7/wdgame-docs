@@ -14,7 +14,7 @@ order: 4
 
 - **Бот**: [@bestgameevermybot](https://t.me/bestgameevermybot)
 - **Frontend**: Локальный запуск (https://localhost:3000/)
-- **Backend Swagger**: [https://dev.wdgame.pro/api/v1.0/](https://dev.wdgame.pro/api/v1.0/)
+- **Backend Swagger**: [https://dev.wdgame.pro/docs/](https://dev.wdgame.pro/docs/)
 
 ## Github
 
