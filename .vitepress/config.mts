@@ -4,6 +4,7 @@ import {
 } from "@nolebase/vitepress-plugin-git-changelog/vite";
 import { defineConfig } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
+import { MermaidMarkdown, MermaidPlugin } from "vitepress-plugin-mermaid";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,6 +12,20 @@ export default defineConfig({
   description: "World Domination a TMA game",
   lang: "ru-RU",
   srcDir: "./docs",
+  markdown: {
+    config(md) {
+      md.use(MermaidMarkdown);
+    },
+  },
+  vite: {
+    plugins: [MermaidPlugin()],
+    optimizeDeps: {
+      include: ["mermaid"],
+    },
+    ssr: {
+      noExternal: ["mermaid"],
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

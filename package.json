@@ -1,10 +1,10 @@
 {
-	"dependencies": {
-	},
 	"devDependencies": {
 		"@nolebase/vitepress-plugin-git-changelog": "^2.15.1",
 		"vitepress": "^1.6.3",
-		"vitepress-sidebar": "^1.31.0"
+		"vitepress-sidebar": "^1.31.0",
+		"mermaid": "^11.6.0",
+		"vitepress-plugin-mermaid": "^2.0.17"
 	},
 	"scripts": {
 		"docs:dev": "vitepress dev",
