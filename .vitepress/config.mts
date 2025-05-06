@@ -17,15 +17,6 @@ export default defineConfig({
       md.use(MermaidMarkdown);
     },
   },
-  vite: {
-    plugins: [MermaidPlugin()],
-    optimizeDeps: {
-      include: ["mermaid"],
-    },
-    ssr: {
-      noExternal: ["mermaid"],
-    },
-  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -59,7 +50,14 @@ export default defineConfig({
         repoURL: () => "https://github.com/out7/wdgame-docs",
       }),
       GitChangelogMarkdownSection(),
+      MermaidPlugin(),
     ],
+    optimizeDeps: {
+      include: ["mermaid"],
+    },
+    ssr: {
+      noExternal: ["mermaid"],
+    },
   },
   ignoreDeadLinks: [/^https?:\/\/localhost/],
 });
